@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscrição para Workshop</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h4 align="center">Bem-vindo ao site de inscrição do Workshop de Desenvolvimento Web</h4>
+        <p align="center">Aqui você se inscreve para nosso workshop de desenvolvimento web, onde você terá um estudo personalizado de desenvolvimento de acordo com aquilo que você escolher em nosso formulário.</p>
+    </section>
+    <section id="inscricao">
+        <form action="dados_incricoes" method="post">
+            <fieldset>
+                <legend align="left">Suas informações pessoais</legend>
+                <label for="nome">Nome completo</label>
+                <br />
+                <input type="text" id="nome" name="nome_usr" placeholder="Digite seu nome completo" required />
+                <p></p>
+                <label for="mail">Email</label>
+                <br />
+                <input type="email" id="mail" name="mail" placeholder="email@mail.com" required />
+                <p></p>
+                <label for="tel">Telefone</label>
+                <br />
+                <input type="tel" id="tel" name="tel" placeholder="(19)99999-9999" pattern="^\(d{2}\)\S\d{4,5}-\d{4}$"
+                    required />
+                <p></p>
+                <label for="faixa">Faixa Etária</label>
+                <br />
+                <select id="faixa" name="faixa">
+                    <option value="">Selecione...</option>
+                    <option value="menor">Menor de 18 anos</option>
+                    <option value="maior">De 18 a 35 anos</option>
+                    <option value="maior1">De 36 a 50 anos</option>
+                    <option value="maior2">De 51 a 70 anos</option>
+                    <option value="maior3">Mais de 71 anos</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Sobre o workshop</legend>
+
+                <p for="horario">Selecione o horário de sua preferência</p>
+                <label for="horario">Manhã (das 8hrs às 11hrs) </label>
+                <input type="radio" id="horario" name="horario" value="horario" />
+                <br />
+                <label for="horario">Tarde (das 13hrs às 16hrs) </label>
+                <input type="radio" id="horario" name="horario" value="horario" />
+                <br />
+                <label for="horario">Manhã (das 18hrs às 21hrs) </label>
+                <input type="radio" id="horario" name="horario" value="horario" />
+                <br />
+
+                <p></p>
+                <label for="interesse">Suas áreas de interesse</label>
+                <br />
+                <select id="interesse" name="interesse">
+                    <option value="">Selecione...</option>
+                    <option value="front">Front-End</option>
+                    <option value="back">Back-End</option>
+                    <option value="full">Full-stack</option>
+                </select>
+
+                <p>Tópicos de interesse:</p>
+                <label for="interesse">Linguagem de marcação</label>
+                <input type="checkbox" id="interesse" name="interesse" value="interesse" />
+                <br />
+                <label for="interesse">JavaScript</label>
+                <input type="checkbox" id="interesse" name="interesse" value="interesse" />
+                <br />
+                <label for="interesse">Cibersegurança</label>
+                <input type="checkbox" id="interesse" name="interesse" value="interesse" />
+                <br />
+                <label for="interesse">API</label>
+                <input type="checkbox" id="interesse" name="interesse" value="interesse" />
+                <br />
+                <label for="interesse">Java</label>
+                <input type="checkbox" id="interesse" name="interesse" value="interesse" />
+                <br />
+                <label for="interesse">Desenvolvimento Full-stack</label>
+                <input type="checkbox" id="interesse" name="interesse" value="interesse" />
+                <br />
+                <label for="interesse">Python</label>
+                <input type="checkbox" id="interesse" name="interesse" value="interesse" />
+                <br />
+                <div>
+
+            </fieldset>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+
+</html>

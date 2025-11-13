@@ -1,0 +1,52 @@
+ @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Ingrid+Darling&family=Ojuju:wght@200..800&family=Space+Grotesk:wght@300..700&family=Tapestry&family=Zen+Loop:ital@0;1&display=swap');
+ body{
+    font-family: 'Zen Loop';
+    background-color: rgb(227, 115, 131);
+    padding: 40px;
+}
+h4{
+    text-align: center;
+    color: black;
+    border: 5px;
+    font-family: 'Ojuju';
+}
+p{
+ font-weight: bold;
+    font-size: 20px;   
+}
+ nav ul{
+    background-color: rgb(224, 191, 184);
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+} nav ul li{
+    display: inline-block;
+    margin: 0 70px;
+    font-size: 20px;
+} nav ul li a{
+    font-family: 'Ojuju';
+    color: black;
+    text-transform:none;
+    font-weight: lighter;
+    font-size: 20px;
+}
+form{
+    margin: 0 auto;
+    background: #F5F5DC;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 450px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+label{
+    margin-top: 10px;
+    font-weight: bolder;
+    display: flexbox;
+}
+fieldset{
+    border-radius: 15px;
+    border-color:rgb(224, 191, 184);
+}
+div{
+    align-items: center;
+}
